@@ -1,0 +1,56 @@
+.login-form{
+    width: 450px;
+    margin: 50px auto;
+    margin-top: 15%;
+}
+.login-form form{
+    margin-bottom: 15px;
+    background-image: url('images/todo.png');
+    padding: 30px;
+}
+.login-form h2{
+    margin: 0 0 15px;
+}
+.form-control, .btn{
+    min-height: 38px;
+    border-radius: 2px;
+}
+.btn{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+h1{
+    animation: type 3s steps(37);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+}
+@keyframes type{
+    0%{
+        width:0ch;
+    }
+    100%{
+        width:37ch;
+    }
+}
+
+.para{
+    animation: type1 3s steps(100);
+    overflow: hidden;
+    white-space: nowrap;
+    font-family: consolas;
+    text-align: center;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: burlywood;
+}
+@keyframes type1{
+    0%{
+        width:0ch;
+    }
+    100%{
+        width:37ch;
+    }
+}

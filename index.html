@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-form">
+        <form id="form1">
+            <h2 align="center">Login</h2>
+            <div class="form-group">
+                <label>Username:</label>
+                <input type="text" class="form-control" placeholder="Enter Username" required="required" id="un">
+            </div>
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" class="form-control" placeholder="Enter Password" required="required" id="pwd">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary btn-block" id="login-button">Login</button>
+            </div>
+            <div class="clearfix"></div>
+        </form>
+    </div>
+    <style>
+        body {
+          background-image: url('images/bg.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;
+          background-size: 100% 100%;
+        }
+    </style>
+    <script type="text/javascript">
+        $(document).ready(checklogin())
+        function checklogin(){
+            $("#login-button").click(function(){
+                if($('#un').val() == 'admin' && $('#pwd').val() == '12345')
+                {
+                    document.getElementById('form1').setAttribute("action","home.html");
+                }
+                else
+                {
+                    alert('Invalid username or password');
+                }
+            })
+        }
+    </script>
+</body>
+</html>
